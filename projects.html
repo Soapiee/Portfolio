@@ -1,0 +1,174 @@
+<!DOCTYPR html>
+<html>
+
+  <head>
+    <title>Projects</title>
+  </head>
+
+  <body>
+    <header>
+    <h1>My Projects</h1>
+    </header>
+
+    <main>
+
+      <section id="merger-plugin">
+        <h2>Minecraft Plugin - "Merger" (WIP)</h2>
+
+        <ul>
+          <li><a href="https://github.com/Soapiee/Merger" target="_blank">GitHub</a> </li>
+        </ul>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QI0GSUFdjgo?si=2OVIivjbMoiQsCnw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- Add a video/gif of what it does-->
+
+        <p>If you've ever played a mobile game where you merge objects, well this is that, but in Minecraft. It is currently still in development and isnt yet available to download.</p>
+      </section>
+      <br>
+
+      <section id="deathholos-plugin">
+        <h2>Minecraft Plugin - "Death Holograms"</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col"><h3>Total Downloads</h3></th>
+              <th scope="col"><h3>Code</h3></th>
+              <th scope="col"><h3>Plugin Page</h3></th>
+              <th scope="col"><h3>Wiki</h3></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><span id="total-downloads">0</span></td>
+              <td><a href="https://github.com/Soapiee/DeathHolograms" target="_blank">GitHub</a></td>
+              <td><a href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">Plugin Page</a></td>
+              <td><a href="https://github.com/Soapiee/DeathHolograms/wiki" target="_blank">GitHub Wiki</a></td>
+            </tr>
+        </table>
+
+        <p>This is a Minecraft plugin that creates a hologram at the location a player dies. Each hologram is fully customisable by the user. It is available for free to the public.</p>
+      
+        <script>
+            async function loadDownloads() {
+                let spigot = 0;
+                let modrinth = 0;
+                let hangar = 0;
+                const totalElement = document.getElementById("total-downloads");
+
+                try {
+                    const spigotResponse = await fetch("https://api.spiget.org/v2/resources/133766");
+
+                    if (!spigotResponse.ok) return;
+                    
+                    const spigotData = await spigotResponse.json();
+                    spigot = Number(spigotData.downloads);
+                    
+                } catch (error) {
+                }
+
+                try {
+                    const modrinthResponse = await fetch("https://api.modrinth.com/v2/project/deathholograms");
+
+                    if (!modrinthResponse.ok) return;
+                    
+                    const modrinthData = await modrinthResponse.json();
+                    modrinth = Number(modrinthData.downloads);
+                    
+                } catch (error) {
+                }
+
+                try {
+                    const hangarResponse = await fetch("https://hangar.papermc.io/api/v1/projects/Soapiee/DeathHolograms");
+
+                    if (!hangarResponse.ok) return;
+                    
+                    const hangarData = await hangarResponse.json();
+                    hangar = Number(hangarData.stats.downloads);
+                    
+                } catch (error) {
+                }
+
+                const total = spigot + modrinth + hangar;
+                totalElement.textContent = total.toLocaleString("en-GB");
+            }
+
+            loadDownloads();
+        </script>
+
+      </section>
+      <br>
+
+      <section id="biomemastery-plugin">
+        <h2>Minecraft Plugin - "BiomeMastery"</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col"><h3>Total Downloads</h3></th>
+              <th scope="col"><h3>Code</h3></th>
+              <th scope="col"><h3>Plugin Page</h3></th>
+              <th scope="col"><h3>Wiki</h3></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1000</td>
+              <td>GitHub</td>
+              <td>Spigot</td>
+              <td>GitHub</td>
+            </tr>
+        </table>
+
+        <p>This is a Minecraft plugin that lets players "level up" each biome that exists in Minecraft and will give them rewards, which can be edited in the config file. This is something thats not possible in normal Minecraft. It is available for free to the public.</p>
+      </section>
+      <br>
+
+      <section id="TrueFalseQuiz-plugin">
+        <h2>Minecraft Plugin - "A True or False Quiz"</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col"><h3>Total Downloads</h3></th>
+              <th scope="col"><h3>Code</h3></th>
+              <th scope="col"><h3>Plugin Page</h3></th>
+              <th scope="col"><h3>Wiki</h3></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1000</td>
+              <td>GitHub</td>
+              <td>Spigot</td>
+              <td>GitHub</td>
+            </tr>
+        </table>
+
+        <p>This is a Minecraft plugin that runs an automated quiz. It only accepts true or false answers. It comes with pre-set questions but they can be removed, edited and new ones can be added. If the user wants the players to win rewards from finishing a quiz, this can also be setup in the config. It is available for free to the public.</p>
+      </section>
+      <br>
+
+      <section id="website">
+        <h2>This Website</h2>
+
+        <ul>
+          <li><a href="https://github.com/Soapiee/Portfolio" target="_blank">GitHub</a> </li>
+        </ul>
+        
+        <p>This may be simple, but here is the code behind what you see</p>
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+        
+  </body>
+
+</html>

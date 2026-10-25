@@ -1,0 +1,61 @@
+* {
+    font-family: Verdana;
+    color: black;
+}
+
+a, a:visited {
+    color: black;
+}
+
+h2 a[href*='index']{
+    text-align: left;
+    color: aquamarine;
+}
+
+h2 a[href*='about']{
+    text-align: center;
+    color: aquamarine;
+}
+
+h2 a[href*="projects"]{
+    text-align: right;
+    color: aquamarine;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2,h3,h4,h5,h6 {
+    color: cornflowerblue;
+}
+
+p {
+    text-align: right;
+}
+
+table {
+    border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    border: 1px solid red;
+}
+
+tr {
+    border: 1px solid orange;
+}
+
+td {
+    border: 1px solid blue;
+}
+
+.video {
+    background-image: url("https://preview.redd.it/the-official-minecraft-youtube-banner-full-image-v0-s2c0viilldj41.png?width=1080&crop=smart&auto=webp&s=19fd5b7cb877ef673f5f6d317e2949b4d1d85035");
+    /* background-size: 600px; */
+    background-position: left;
+    width: 600px;
+    height: 500px;
+}

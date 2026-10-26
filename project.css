@@ -1,25 +1,71 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Verdana;
     color: black;
 }
 
+p {
+    text-align: center;
+    min-width: 300px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.navbar {
+    /* display: inline-blocks; */
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    /* margin: 0 auto; */
+    background-color: purple;
+    width: 100%;
+}
+
+.navbar a {
+    color: orange;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.navbar a:visited {
+    color: orange;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#nav-current {
+    font-size: 50px;
+}
+
+main {
+    position: relative;
+    top: 50px;
+}
+
+.description {
+    text-align: center;
+    padding: 30px 10px;
+    max-width: 600px;
+}
+
+.deathholos-plugin, .truefalsequiz-plugin {
+    text-align: right;
+}
+
+.merger-plugin, .biomemastery-plugin {
+    text-align: left;
+}
+
+.dh-content, .bm-content, .tfq-content, .merger-content, .website-content {
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+}
+
 a, a:visited {
     color: black;
-}
-
-h2 a[href*='index']{
-    text-align: left;
-    color: aquamarine;
-}
-
-h2 a[href*='about']{
-    text-align: center;
-    color: aquamarine;
-}
-
-h2 a[href*="projects"]{
-    text-align: right;
-    color: aquamarine;
 }
 
 h1 {
@@ -27,35 +73,47 @@ h1 {
     text-align: center;
 }
 
-h2,h3,h4,h5,h6 {
+h2 {
     color: cornflowerblue;
+    text-align: center;
+    padding: 1px;
+    margin: 5px;
+    border: 1px none;
 }
 
-p {
-    text-align: right;
+.table {
+
 }
 
 table {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: left;
+    /* padding: 20px;
+    border: 10px solid purple; */
 }
 
 th {
+    color: gold;
+    font-size: 20px;
+    padding: 10px;
     border: 1px solid red;
 }
 
 tr {
-    border: 1px solid orange;
+    color: blue;
+    font-size: 10px;
+    /* border: 1px solid orange; */
 }
 
 td {
+    color: blue;
     border: 1px solid blue;
 }
 
 .video {
     background-image: url("https://preview.redd.it/the-official-minecraft-youtube-banner-full-image-v0-s2c0viilldj41.png?width=1080&crop=smart&auto=webp&s=19fd5b7cb877ef673f5f6d317e2949b4d1d85035");
     /* background-size: 600px; */
-    background-position: left;
-    width: 600px;
-    height: 500px;
+    background-position: center;
+    max-width: 600px;
+    max-height: 500px;
 }

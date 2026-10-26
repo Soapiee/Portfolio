@@ -1,0 +1,31 @@
+* {
+    font-family: Verdana;
+    color: black;
+}
+
+.navbar {
+    display: inline-blocks;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.navbar a {
+    color: orange;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.navbar a:visited {
+    color: orange;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#nav-current {
+    font-size: 50px;
+}
+
+a, a:visited {
+    color: black;
+}

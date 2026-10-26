@@ -8,20 +8,19 @@
 
   <body>
     <header>
-      <h1><a href="./index.html">Sophie Mansell - Portfolio</a></h1>
 
-      <nav>
-        <h2><a href="./index.html">Home</a></h2>
-        <h2><a href="./about.html">About</a></h2>
-        <h2><a href="./projects.html">Projects</a></h2>
+      <nav class="navbar">
+        <a href="./about.html">About</a>
+        <a href="./index.html">Home</a>
+        <a href="./projects.html" id="nav-current">Projects</a>
       </nav>
       
     </header>
 
     <main>
-      <h1>My Projects</h1>
-
-      <section id="merger-plugin">
+      <!-- <h1>My Projects</h1> -->
+       <br>
+      <section class="merger-plugin">
         <h2>Minecraft Plugin - "Merger" (WIP)</h2>
 
         <ul>
@@ -30,41 +29,41 @@
 
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/QI0GSUFdjgo?si=2OVIivjbMoiQsCnw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-        <div class="video">
+        <div class="video merger-content">
 <!-- Add a video/gif of what it does-->
         </div>
         
-        <p>If you've ever played a mobile game where you merge objects, well this is that, but in Minecraft. It is currently still in development and isnt yet available to download.</p>
+        <p class="description merger-content">If you've ever played a mobile game where you merge objects, well this is that, but in Minecraft. It is currently still in development and isnt yet available to download.</p>
       </section>
       <br>
 
-      <section id="deathholos-plugin">
+      <section class="deathholos-plugin">
         <h2>Minecraft Plugin - "Death Holograms"</h2>
 
-        <table>
+        <p class="description dh-content">This is a Minecraft plugin that creates a hologram at the location a player dies. Each hologram is fully customisable by the user. It is available for free to the public.</p>
+
+        <table class="table dh-content">
           <thead>
             <tr>
-              <th scope="col" rowspan="2"><h3>Total Downloads</h3></th>
-              <th scope="col" rowspan="2"><h3>Initial Release</h3></th>
-              <th scope="col" colspan="3"><h3>Links</h3></th>
+              <th scope="col" rowspan="2">Total Downloads</th>
+              <th scope="col" rowspan="2">Initial Release</th>
+              <th scope="col" colspan="3">Links</th>
             </tr>
-              <th scope="col"><h3>Code</h3></th>
-              <th scope="col"><h3>Plugin Page</h3></th>
-              <th scope="col"><h3>Wiki</h3></th>
+              <th scope="col">Code</th>
+              <th scope="col">Plugin Page</th>
+              <th scope="col">Wiki</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <td><span id="dh-downloads">0</span></td>
-              <td>May 16, 2025></td>
+              <td>May 16, 2025</td>
               <td><a href="https://github.com/Soapiee/DeathHolograms" target="_blank">GitHub</a></td>
               <td><a href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">Plugin Page</a></td>
               <td><a href="https://github.com/Soapiee/DeathHolograms/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
-
-        <p>This is a Minecraft plugin that creates a hologram at the location a player dies. Each hologram is fully customisable by the user. It is available for free to the public.</p>
       
         <script>
             async function loadDownloads() {
@@ -116,36 +115,35 @@
       </section>
       <br>
 
-      <section id="biomemastery-plugin">
+      <section class="biomemastery-plugin">
         <h2>Minecraft Plugin - "BiomeMastery"</h2>
 
-        <table>
+        <table class="table bm-content">
           <thead>
             <tr>
-             <th scope="col" rowspan="2"><h3>Total Downloads</h3></th>
-              <th scope="col" rowspan="2"><h3>Initial Release</h3></th>
-              <th scope="col" colspan="3"><h3>Links</h3></th>
+              <th scope="col" rowspan="2">Total Downloads</th>
+              <th scope="col" rowspan="2">Initial Release</th>
+              <th scope="col" colspan="3">Links</th>
             </tr>
-              <th scope="col"><h3>Code</h3></th>
-              <th scope="col"><h3>Plugin Page</h3></th>
-              <th scope="col"><h3>Wiki</h3></th>
+              <th scope="col">Code</th>
+              <th scope="col">Plugin Page</th>
+              <th scope="col">Wiki</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td></td>
-            </tr>
-            <tr>
               <td><span id="bm-downloads">0</span></td>
-              <td>Dec 19, 2025></td>
+              <td>Dec 19, 2025</td>
               <td><a href="https://github.com/Soapiee/BiomeMastery" target="_blank">GitHub</a></td>
               <td><a href="https://www.spigotmc.org/resources/biomemastery-1-16-26-3.130906/" target="_blank">Plugin Page</a></td>
               <td><a href="https://github.com/Soapiee/BiomeMastery/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
 
-        <p>This is a Minecraft plugin that lets players "level up" each biome that exists in Minecraft and will give them rewards, which can be edited in the config file. This is something thats not possible in normal Minecraft. It is available for free to the public.</p>
+        <p class="description bm-content">This is a Minecraft plugin that lets players "level up" each biome that exists in Minecraft and will give them rewards, which can be edited in the config file. This is something thats not possible in normal Minecraft. It is available for free to the public.
+        <br> Players who use this, have their data stored in a SQL database or in a YAML file. The plugin supports both storage methods. </p>
+      </section>
       
         <script>
             async function loadDownloads() {
@@ -197,34 +195,34 @@
       </section>
       <br>
 
-      <section id="TrueFalseQuiz-plugin">
+      <section class="truefalsequiz-plugin">
         <h2>Minecraft Plugin - "A True or False Quiz"</h2>
 
-        <table>
+        <p class="description tfq-content">This is a Minecraft plugin that runs an automated quiz. It only accepts true or false answers. It comes with pre-set questions but they can be removed, edited and new ones can be added. If the user wants the players to win rewards from finishing a quiz, this can also be setup in the config. It is available for free to the public.</p>
+        
+        <table class="table tfq-content">
           <thead>
             <tr>
-              <th scope="col" rowspan="2"><h3>Total Downloads</h3></th>
-              <th scope="col" rowspan="2"><h3>Initial Release</h3></th>
-              <th scope="col" colspan="3"><h3>Links</h3></th>
+              <th scope="col" rowspan="2">Total Downloads</th>
+              <th scope="col" rowspan="2">Initial Release</th>
+              <th scope="col" colspan="3">Links</th>
             </tr>
-              <th scope="col"><h3>Code</h3></th>
-              <th scope="col"><h3>Plugin Page</h3></th>
-              <th scope="col"><h3>Wiki</h3></th>
+              <th scope="col">Code</th>
+              <th scope="col">Plugin Page</th>
+              <th scope="col">Wiki</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <td><span id="tfq-downloads">0</span></td>
-              <td>May 16, 2025></td>
+              <td>May 16, 2025</td>
               <td><a href="https://github.com/Soapiee/TFQuiz" target="_blank">GitHub</a></td>
               <td><a href="https://www.spigotmc.org/resources/truefalsequiz-1-16-26-3.125077/" target="_blank">Plugin Page</a></td>
               <td><a href="https://github.com/Soapiee/TFQuiz/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
-
-        <p>This is a Minecraft plugin that runs an automated quiz. It only accepts true or false answers. It comes with pre-set questions but they can be removed, edited and new ones can be added. If the user wants the players to win rewards from finishing a quiz, this can also be setup in the config. It is available for free to the public.</p>
-      
+    
         <script>
             async function loadDownloads() {
                 let spigot = 0;
@@ -275,14 +273,14 @@
       </section>
       <br>
 
-      <section id="website">
+      <section class="website">
         <h2>This Website</h2>
 
         <ul>
           <li><a href="https://github.com/Soapiee/Portfolio" target="_blank">GitHub</a> </li>
         </ul>
         
-        <p>This may be simple, but here is the code behind what you see</p>
+        <p class="description website-content">This may be simple, but here is the code behind what you see</p>
       </section>
 
     </main>

@@ -4,7 +4,10 @@
   <head>
     <title>Sophie Mansell - Portfolio</title>
     <link href="./project.css" rel="stylesheet">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
 
   <body>
     <header>
@@ -18,22 +21,27 @@
     </header>
 
     <main>
-      <!-- <h1>My Projects</h1> -->
        <br>
       <section class="merger-plugin">
         <h2>Minecraft Plugin - "Merger" (WIP)</h2>
 
-        <ul>
-          <li><a href="https://github.com/Soapiee/Merger" target="_blank">GitHub</a> </li>
-        </ul>
-
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/QI0GSUFdjgo?si=2OVIivjbMoiQsCnw" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
-        <div class="video merger-content">
-<!-- Add a video/gif of what it does-->
+        <div class="merger-gif merger-content">
         </div>
+
+        <div class="github-logo merger-content">
+          <a href="https://github.com/Soapiee/Merger" target="_blank"></a>
+        </div>
+
+        <!-- <video class="merger-video">Video unavailable</video> -->
         
-        <p class="description merger-content">If you've ever played a mobile game where you merge objects, well this is that, but in Minecraft. It is currently still in development and isnt yet available to download.</p>
+        
+        <p class="description merger-content">If you've ever played a mobile game where you merge objects, 
+          well this is that, but in Minecraft. It is currently still in development and 
+          isnt yet available to download.
+        </p>
+
+        
+        
       </section>
       <br>
 
@@ -135,14 +143,17 @@
             <tr>
               <td><span id="bm-downloads">0</span></td>
               <td>Dec 19, 2025</td>
-              <td><a href="https://github.com/Soapiee/BiomeMastery" target="_blank">GitHub</a></td>
+              <td><a class="github-logo" href="https://github.com/Soapiee/Merger" target="_blank"></a></td>
+              <!-- <td><a href="https://github.com/Soapiee/BiomeMastery" target="_blank">GitHub</a></td> -->
               <td><a href="https://www.spigotmc.org/resources/biomemastery-1-16-26-3.130906/" target="_blank">Plugin Page</a></td>
               <td><a href="https://github.com/Soapiee/BiomeMastery/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
 
         <p class="description bm-content">This is a Minecraft plugin that lets players "level up" each biome that exists in Minecraft and will give them rewards, which can be edited in the config file. This is something thats not possible in normal Minecraft. It is available for free to the public.
-        <br> Players who use this, have their data stored in a SQL database or in a YAML file. The plugin supports both storage methods. </p>
+        <br> Players who use this, have their data stored in a SQL database or in a YAML file. The plugin supports both storage methods. 
+        Using AI I have already translated all the messages/prompts into German, French, Dutch and Spanish. Although the user can translate and edit
+      any of the messages themselves, so it technically supports any language.</p>
       </section>
       
         <script>

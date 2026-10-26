@@ -1,9 +1,14 @@
+
+/* Colour Scheme: #FAE0CF + #E6BDA1 + #594E74 + #79A6A4 */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana;
+    /* font-family: Verdana, Tahoma, sans-serif; */
+    font-family: "Michroma", sans-serif;
     color: black;
+    background-color: #FAE0CF;
 }
 
 p {
@@ -14,23 +19,26 @@ p {
 }
 
 .navbar {
-    /* display: inline-blocks; */
     text-align: center;
     position: fixed;
     z-index: 10;
-    /* margin: 0 auto; */
-    background-color: purple;
     width: 100%;
 }
 
 .navbar a {
-    color: orange;
+    color: white;
+    text-decoration-line: none;
+    font-weight: 900;
+    text-shadow: 5px 5px #594E74;
     font-size: 30px;
     margin: 30px;
 }
 
 .navbar a:visited {
-    color: orange;
+    color: white;
+    text-decoration-line: none;
+    text-shadow: 5px 5px #594E74;
+    font-weight: 900;
     font-size: 30px;
     margin: 10px;
 }
@@ -44,10 +52,28 @@ main {
     top: 50px;
 }
 
+a, a:visited {
+    color: black;
+}
+
+h2 {
+    color: #594E74;
+    text-align: center;
+    text-shadow: 3px 3px white;
+    font-weight: bolder;
+    padding: 1px;
+    margin: 50px;
+    border: 1px none;
+}
+
 .description {
     text-align: center;
     padding: 30px 10px;
     max-width: 600px;
+    background-color: #E6BDA1;
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 10px;
 }
 
 .deathholos-plugin, .truefalsequiz-plugin {
@@ -61,24 +87,11 @@ main {
 .dh-content, .bm-content, .tfq-content, .merger-content, .website-content {
     display: inline-block;
     width: 600px;
-    height: 200px;
+    height: 600px;
 }
 
-a, a:visited {
-    color: black;
-}
-
-h1 {
-    color: red;
-    text-align: center;
-}
-
-h2 {
-    color: cornflowerblue;
-    text-align: center;
-    padding: 1px;
-    margin: 5px;
-    border: 1px none;
+section {
+    margin: 50px;
 }
 
 .table {
@@ -88,6 +101,7 @@ h2 {
 table {
     /* border: 1px solid black; */
     text-align: left;
+    /* color: #79A6A4; */
     /* padding: 20px;
     border: 10px solid purple; */
 }
@@ -110,10 +124,25 @@ td {
     border: 1px solid blue;
 }
 
-.video {
+.merger-gif {
     background-image: url("https://preview.redd.it/the-official-minecraft-youtube-banner-full-image-v0-s2c0viilldj41.png?width=1080&crop=smart&auto=webp&s=19fd5b7cb877ef673f5f6d317e2949b4d1d85035");
     /* background-size: 600px; */
     background-position: center;
     max-width: 600px;
-    max-height: 500px;
+    max-height: 600px;
+}
+
+.github-logo {
+    background-image: url("GithubLogo.png");
+    position: sticky;
+    display: inline-block;
+    z-index: 5;
+    top: 685px;
+    right: 700px;
+    background-color: #E6BDA1;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    max-width: 700px;
+    max-height: 700px;
 }

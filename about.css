@@ -1,23 +1,43 @@
+
+/* Colour Scheme: #FAE0CF + #E6BDA1 + #594E74 + #79A6A4 */
+
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Verdana;
     color: black;
+    background-color: #FAE0CF;
+}
+
+p {
+    text-align: center;
+    min-width: 300px;
+    max-height: 600px;
+    overflow: auto;
 }
 
 .navbar {
-    display: inline-blocks;
     text-align: center;
-    position: relative;
-    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
 .navbar a {
-    color: orange;
+    color: white;
+    text-decoration-line: none;
+    font-weight: bolder;
+    text-shadow: 5px 5px #594E74;
     font-size: 30px;
     margin: 30px;
 }
 
 .navbar a:visited {
-    color: orange;
+    color: white;
+    text-decoration-line: none;
+    text-shadow: 5px 5px #594E74;
+    font-weight: bolder;
     font-size: 30px;
     margin: 10px;
 }
@@ -26,6 +46,21 @@
     font-size: 50px;
 }
 
+main {
+    position: relative;
+    top: 50px;
+}
+
 a, a:visited {
     color: black;
+}
+
+h2 {
+    color: #594E74;
+    text-align: center;
+    text-shadow: 3px 3px white;
+    font-weight: bolder;
+    padding: 1px;
+    margin: 50px;
+    border: 1px none;
 }

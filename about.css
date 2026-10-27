@@ -10,13 +10,6 @@
     background-color: #FAE0CF;
 }
 
-p {
-    text-align: center;
-    min-width: 300px;
-    max-height: 600px;
-    overflow: auto;
-}
-
 .navbar {
     text-align: center;
     position: fixed;
@@ -55,12 +48,15 @@ a, a:visited {
     color: black;
 }
 
-h2 {
-    color: #594E74;
+.about {
+    margin-top: 100px;
+    position: relative;
     text-align: center;
-    text-shadow: 3px 3px white;
-    font-weight: bolder;
-    padding: 1px;
-    margin: 50px;
-    border: 1px none;
+    font-size: 20px;
+    padding: 50px;
+    background-color: #E6BDA1;
+    border: 1px dashed black;
+    border-radius: 10px;
+    float: left;
+    max-width: 800px;
 }

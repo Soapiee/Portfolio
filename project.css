@@ -76,16 +76,16 @@ a.merger-title:visited {
 
 .hover-content {
     display: none;
-    background-color: #594E74;
-    padding: 10px;
+    background-color: #FAE0CF;
+    padding: 5px;
 }
 
 a.merger-title:hover + .hover-content{
     display: block;
     position: absolute;
-    top: 115px;
-    left: 650px;
-    width: 400px;
+    top: 110px;
+    left: 750px;
+    width: 300px;
 }
 
 .description {

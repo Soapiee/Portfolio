@@ -10,12 +10,12 @@
     background-color: #FAE0CF;
 }
 
-p {
+/* p {
     text-align: center;
     min-width: 300px;
     max-height: 600px;
     overflow: auto;
-}
+} */
 
 .navbar {
     text-align: center;
@@ -55,12 +55,28 @@ a, a:visited {
     color: black;
 }
 
-h2 {
-    color: #594E74;
+.title {
+    margin-top: 200px;
+    position: relative;
     text-align: center;
+    color: #594E74;
+    font-size: 50px;
     text-shadow: 3px 3px white;
     font-weight: bolder;
-    padding: 1px;
-    margin: 50px;
     border: 1px none;
+}
+
+.intro {
+    margin: 30px;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px;
+    background-color: #E6BDA1;
+    border: 1px dashed black;
+    border-radius: 10px;
+}
+
+.box {
+    display: inline-block;
+    width: 33.33%;
 }

@@ -1,11 +1,11 @@
-
 /* Colour Scheme: #FAE0CF + #E6BDA1 + #594E74 + #79A6A4 */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana;
+    /* font-family: Verdana, Tahoma, sans-serif; */
+    font-family: "Michroma", sans-serif;
     color: black;
     background-color: #FAE0CF;
 }
@@ -27,7 +27,7 @@ p {
 .navbar a {
     color: white;
     text-decoration-line: none;
-    font-weight: bolder;
+    font-weight: 900;
     text-shadow: 5px 5px #594E74;
     font-size: 30px;
     margin: 30px;
@@ -37,7 +37,7 @@ p {
     color: white;
     text-decoration-line: none;
     text-shadow: 5px 5px #594E74;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 30px;
     margin: 10px;
 }

@@ -66,6 +66,28 @@ h2 {
     border: 1px none;
 }
 
+a.merger-title {
+    text-decoration-line: none;
+}
+
+a.merger-title:visited {
+    text-decoration-line: none;
+}
+
+.hover-content {
+    display: none;
+    background-color: #594E74;
+    padding: 10px;
+}
+
+a.merger-title:hover + .hover-content{
+    display: block;
+    position: absolute;
+    top: 115px;
+    left: 650px;
+    width: 400px;
+}
+
 .description {
     text-align: center;
     padding: 30px 10px;
@@ -88,6 +110,7 @@ h2 {
     display: inline-block;
     width: 600px;
     height: 600px;
+    z-index: 1;
 }
 
 section {
@@ -132,9 +155,9 @@ td {
     max-height: 600px;
 }
 
-.github-logo {
+/* .github-logo {
     background-image: url("GithubLogo.png");
-    position: sticky;
+    position: absolute;
     display: inline-block;
     z-index: 5;
     top: 685px;
@@ -145,4 +168,5 @@ td {
     background-position: center;
     max-width: 700px;
     max-height: 700px;
-}
+ } 
+*/

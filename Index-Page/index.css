@@ -48,6 +48,7 @@ a, a:visited {
     position: relative;
     text-align: center;
     color: #594E74;
+    /* background-color: red; */
     font-size: 50px;
     text-shadow: 3px 3px white;
     font-weight: bolder;

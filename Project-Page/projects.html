@@ -3,18 +3,19 @@
 
   <head>
     <title>Sophie Mansell - Portfolio</title>
-    <link href="./project.css" rel="stylesheet">
+    <link href="project.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
   <body>
     <header>
 
       <nav class="navbar">
-        <a href="./about.html">About</a>
-        <a href="./index.html">Home</a>
+        <a href="../About-Page/about.html">About</a>
+        <a href="../Index-Page/index.html">Home</a>
         <a href="./projects.html" id="nav-current">Projects</a>
       </nav>
       
@@ -23,13 +24,12 @@
     <main>
        <br>
       <section class="merger-plugin">
-        <a class="merger-title" href="https://github.com/Soapiee/Merger" target="_blank"><h2>Minecraft Plugin - "Merger" (WIP)</h2></a>
-        <div class="hover-content">Click me for more info!</div>
+        <h2>Minecraft Plugin - "Merger" (WIP)</h2>
 
-        <div class="merger-gif merger-content">
-        </div>
+        <div class="merger-gif merger-content"></div>
         
-        <p class="description merger-content">If you've ever played a mobile game where you merge objects, 
+        <p class="description merger-content">
+          If you've ever played a mobile game where you merge objects, 
           well this is that, but in Minecraft. It is currently still in development and 
           isnt yet available to download.
           <br><br>
@@ -40,15 +40,37 @@
           and there are lots of configuration options to tailor the plugin to their liking. 
           As standard it will come with a set of pre-made config files, so its can be plug-and-play.
           All commands, permissions and features will be fully documented in the GitHub Wiki and on the public plugin page once published.  
-          <br>
+          <br><br>
+            <a class="github-logo" href="https://github.com/Soapiee/Merger" target="_blank"><img src="../Media/GithubLogo.png" class="github-logo"></a>
         </p>
 
-        
+        </div>
+
       </section>
       <br>
 
       <section class="deathholos-plugin">
         <h2>Minecraft Plugin - "Death Holograms"</h2>
+
+        <div class="icons-box dh-content">
+
+          <a href="https://github.com/Soapiee/Merger" target="_blank">
+            <div class="icon github-icon"></div>
+          </a>
+
+          <a href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">
+            <div class="icon spigot-icon"></div>
+          </a>
+
+          <a href="https://hangar.papermc.io/Soapiee/DeathHolograms" target="_blank">
+            <div class="icon paper-icon"></div>
+          </a>
+
+          <a href="https://modrinth.com/plugin/deathholograms" target="_blank">
+            <div class="icon modrinth-icon"></div>
+          </a>  
+
+        </div>
 
         <p class="description dh-content">
           The idea behind this plugin was to find a plugin that was already popular in the Minecraft community,
@@ -69,27 +91,19 @@
           This allowed players to have a choice on how to utilise my plugin.
         </p>
 
-        <table class="dh-content">
+        <table class="dh-table dh-content">
           <caption class="table-caption">Plugin Stats</caption>
           <thead>
             <tr>
               <th scope="col" rowspan="2">Total Downloads</th>
               <th scope="col" rowspan="2">Initial Release</th>
-              <th scope="col" colspan="3">Links</th>
-            </tr>
-              <th scope="col">Code</th>
-              <th scope="col">Plugin Page</th>
-              <th scope="col">Wiki</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <td><span class="table-link" id="dh-downloads">0</span></td>
-              <td>May 16, 2025</td>
-              <td ><a class="table-link" href="https://github.com/Soapiee/DeathHolograms" target="_blank">GitHub</a></td>
-              <td><a class="table-link" href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">Plugin Page</a></td>
-              <td><a class="table-link" href="https://github.com/Soapiee/DeathHolograms/wiki" target="_blank">GitHub Wiki</a></td>
+              <td>March 26, 2026</td>
             </tr>
         </table>
       
@@ -146,16 +160,12 @@
       <section class="biomemastery-plugin">
         <h2>Minecraft Plugin - "BiomeMastery"</h2>
 
-        <table class="bm-content">
+        <table class="bm-table bm-content">
+          <caption class="table-caption">Plugin Stats</caption>
           <thead>
             <tr>
-              <th scope="col" rowspan="2">Total Downloads</th>
-              <th scope="col" rowspan="2">Initial Release</th>
-              <th scope="col" colspan="3">Links</th>
-            </tr>
-              <th scope="col">Code</th>
-              <th scope="col">Plugin Page</th>
-              <th scope="col">Wiki</th>
+              <th scope="col">Total Downloads</th>
+              <th scope="col">Initial Release</th>
             </tr>
           </thead>
 
@@ -163,9 +173,6 @@
             <tr>
               <td><span class="table-link" id="bm-downloads">0</span></td>
               <td>Dec 19, 2025</td>
-              <td><a class="table-link" href="https://github.com/Soapiee/BiomeMastery" target="_blank">GitHub</a></td>
-              <td><a class="table-link" href="https://www.spigotmc.org/resources/biomemastery-1-16-26-3.130906/" target="_blank">Plugin Page</a></td>
-              <td><a class="table-link" href="https://github.com/Soapiee/BiomeMastery/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
 
@@ -184,6 +191,27 @@
           Using AI I have already pre-translated all the messages/prompts into German, French, Dutch and Spanish. 
           Although the user can translate and edit any of the messages themselves, so it technically supports any language.
         </p>
+
+        <div class="icons-box bm-content">
+
+          <a href="https://github.com/Soapiee/Merger" target="_blank">
+            <div class="icon github-icon"></div>
+          </a>
+
+          <a href="https://www.spigotmc.org/resources/biomemastery-1-16-26-3.130906/" target="_blank">
+            <div class="icon spigot-icon"></div>
+          </a>
+
+          <a href="https://hangar.papermc.io/Soapiee/BiomeMastery" target="_blank">
+            <div class="icon paper-icon"></div>
+          </a>
+
+          <a href="https://modrinth.com/plugin/biome-mastery" target="_blank">
+            <div class="icon modrinth-icon"></div>
+          </a>  
+
+        </div>
+
       </section>
       
         <script>
@@ -239,6 +267,26 @@
       <section class="truefalsequiz-plugin">
         <h2>Minecraft Plugin - "A True or False Quiz"</h2>
 
+        <div class="icons-box tfq-content">
+
+          <a href="https://github.com/Soapiee/Merger" target="_blank">
+            <div class="icon github-icon"></div>
+          </a>
+
+          <a href="https://www.spigotmc.org/resources/truefalsequiz-1-16-26-3.125077/" target="_blank">
+            <div class="icon spigot-icon"></div>
+          </a>
+
+          <a href="https://hangar.papermc.io/Soapiee/TrueFalseQuiz" target="_blank">
+            <div class="icon paper-icon"></div>
+          </a>
+
+          <a href="" target="_blank">
+            <div class="icon modrinth-icon"></div>
+          </a>  
+
+        </div>
+
         <p class="description tfq-content">
           This is a Minecraft plugin that runs an automated quiz. 
           It only accepts "true" or "false" as answers. It comes with pre-set questions but they can be removed, 
@@ -255,16 +303,12 @@
           It is important for me that my plugins are compatible with as many versions of Minecraft as possible.
         </p>
         
-        <table class="tfq-content">
+        <table class="tfq-table tfq-content">
+          <caption class="table-caption">Plugin Stats</caption>
           <thead>
             <tr>
               <th scope="col" rowspan="2">Total Downloads</th>
               <th scope="col" rowspan="2">Initial Release</th>
-              <th scope="col" colspan="3">Links</th>
-            </tr>
-              <th scope="col">Code</th>
-              <th scope="col">Plugin Page</th>
-              <th scope="col">Wiki</th>
             </tr>
           </thead>
 
@@ -272,9 +316,6 @@
             <tr>
               <td><span class="table-link" id="tfq-downloads">0</span></td>
               <td>May 16, 2025</td>
-              <td><a class="table-link" href="https://github.com/Soapiee/TFQuiz" target="_blank">GitHub</a></td>
-              <td><a class="table-link" href="https://www.spigotmc.org/resources/truefalsequiz-1-16-26-3.125077/" target="_blank">Plugin Page</a></td>
-              <td><a class="table-link" href="https://github.com/Soapiee/TFQuiz/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
     
@@ -332,13 +373,18 @@
         <h2>This Website</h2>
 
         <div class="box"></div>
+
         <p class="box description website-content">
           This may be simple, but here is the code behind what you see.
           <br><br>
           I created this website to showcase my projects, and to give a brief overview of myself.
           I learnt HTML + CSS specifically for this project.
+          <br>
+          <a class="github-logo" href="https://github.com/Soapiee/Portfolio" target="_blank"><img src="../Media/GithubLogo.png" class="github-logo"></a>
         </p>
+
         <div class="box"></div>
+
       </section>
 
     </main>

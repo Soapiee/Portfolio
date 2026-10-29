@@ -97,6 +97,18 @@ p {
     z-index: 1;
 }
 
+.bm-table {
+    max-width: 450px;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+
+.dh-table, .tfq-table {
+    max-width: 450px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
 .box {
     display: inline-block;
     width: 33.33%;
@@ -114,7 +126,7 @@ section {
     font-size: 25px;
     font-weight: bolder;
     padding: 1px;
-    margin: 50px;
+    margin: 50px 0px;
     border: 1px none;
 }
 

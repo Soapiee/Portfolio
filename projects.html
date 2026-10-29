@@ -28,18 +28,18 @@
 
         <div class="merger-gif merger-content">
         </div>
-
-        <!-- <div class="github-logo merger-content">
-          <a href="https://github.com/Soapiee/Merger" target="_blank"></a>
-        </div> -->
-
-        <!-- <video class="merger-video">Video unavailable</video> -->
         
         <p class="description merger-content">If you've ever played a mobile game where you merge objects, 
           well this is that, but in Minecraft. It is currently still in development and 
           isnt yet available to download.
-          <br>
-          <br>
+          <br><br>
+          This is the first project I've done using Gradle, and it turns out its alot easier than I expected. 
+          Its builds alot faster than Maven too.
+          <br><br>
+          It utilises a choice of SQL database storage or file storage (YAML). As always, users can fully customise the language file, 
+          and there are lots of configuration options to tailor the plugin to their liking. 
+          As standard it will come with a set of pre-made config files, so its can be plug-and-play.
+          All commands, permissions and features will be fully documented in the GitHub Wiki and on the public plugin page once published.  
           <br>
         </p>
 
@@ -50,9 +50,27 @@
       <section class="deathholos-plugin">
         <h2>Minecraft Plugin - "Death Holograms"</h2>
 
-        <p class="description dh-content">This is a Minecraft plugin that creates a hologram at the location a player dies. Each hologram is fully customisable by the user. It is available for free to the public.</p>
+        <p class="description dh-content">
+          The idea behind this plugin was to find a plugin that was already popular in the Minecraft community,
+          but had fallen victim to out-of-date code, and was no longer being maintained.
+          I found a highly downloaded plugin, that basically created floating text (holograms) at the location a player dies.
+          I didnt look at their code, Im not even sure if it was available to the public, but I decided I wanted to see
+          if I could code it from scratch using my own knowledge. Within a few days the plugin was born. 
+          <br><br>
+          The most difficult part of this project was the impact on server performance. 
+          When it comes to Minecraft holograms, they are usually classed as an entities (like animals). 
+          Lots of entities, means potential performance issues.
+          I researched alot and found a more modern way to create holograms. This new API didnt use entities, 
+          but it was only available in newer versions of Minecraft.
+          This left me with a problem, as I wanted the plugin to be compatible with as many versions of Minecraft as possible.
+          <br><br>
+          Long story short, I added optional dependency support for alternative hologram plugins, 
+          that used packets to create holograms, instead of entities in older versions of Minecraft.
+          This allowed players to have a choice on how to utilise my plugin.
+        </p>
 
-        <table class="table dh-content">
+        <table class="dh-content">
+          <caption class="table-caption">Plugin Stats</caption>
           <thead>
             <tr>
               <th scope="col" rowspan="2">Total Downloads</th>
@@ -67,11 +85,11 @@
 
           <tbody>
             <tr>
-              <td><span id="dh-downloads">0</span></td>
+              <td><span class="table-link" id="dh-downloads">0</span></td>
               <td>May 16, 2025</td>
-              <td><a href="https://github.com/Soapiee/DeathHolograms" target="_blank">GitHub</a></td>
-              <td><a href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">Plugin Page</a></td>
-              <td><a href="https://github.com/Soapiee/DeathHolograms/wiki" target="_blank">GitHub Wiki</a></td>
+              <td ><a class="table-link" href="https://github.com/Soapiee/DeathHolograms" target="_blank">GitHub</a></td>
+              <td><a class="table-link" href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">Plugin Page</a></td>
+              <td><a class="table-link" href="https://github.com/Soapiee/DeathHolograms/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
       
@@ -128,7 +146,7 @@
       <section class="biomemastery-plugin">
         <h2>Minecraft Plugin - "BiomeMastery"</h2>
 
-        <table class="table bm-content">
+        <table class="bm-content">
           <thead>
             <tr>
               <th scope="col" rowspan="2">Total Downloads</th>
@@ -143,19 +161,29 @@
 
           <tbody>
             <tr>
-              <td><span id="bm-downloads">0</span></td>
+              <td><span class="table-link" id="bm-downloads">0</span></td>
               <td>Dec 19, 2025</td>
-              <td><a class="github-logo" href="https://github.com/Soapiee/Merger" target="_blank"></a></td>
-              <!-- <td><a href="https://github.com/Soapiee/BiomeMastery" target="_blank">GitHub</a></td> -->
-              <td><a href="https://www.spigotmc.org/resources/biomemastery-1-16-26-3.130906/" target="_blank">Plugin Page</a></td>
-              <td><a href="https://github.com/Soapiee/BiomeMastery/wiki" target="_blank">GitHub Wiki</a></td>
+              <td><a class="table-link" href="https://github.com/Soapiee/BiomeMastery" target="_blank">GitHub</a></td>
+              <td><a class="table-link" href="https://www.spigotmc.org/resources/biomemastery-1-16-26-3.130906/" target="_blank">Plugin Page</a></td>
+              <td><a class="table-link" href="https://github.com/Soapiee/BiomeMastery/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
 
-        <p class="description bm-content">This is a Minecraft plugin that lets players "level up" each biome that exists in Minecraft and will give them rewards, which can be edited in the config file. This is something thats not possible in normal Minecraft. It is available for free to the public.
-        <br> Players who use this, have their data stored in a SQL database or in a YAML file. The plugin supports both storage methods. 
-        Using AI I have already translated all the messages/prompts into German, French, Dutch and Spanish. Although the user can translate and edit
-      any of the messages themselves, so it technically supports any language.</p>
+        <p class="description bm-content">
+          This is a Minecraft plugin that lets players "level up" each biome that exists in 
+          Minecraft and will give them rewards, which can be edited in the config file. 
+          This is something thats not possible in normal Minecraft. It is available for free to the public.
+          <br><br>
+          When designing this plugin, my goal was to learn more about databases.
+          It fully supports MySQL, or file storage. 
+          Player data gets loaded, saved and updated on a seperate thread, to reduce any lag or performance issues. 
+          It also has a built in caching system, to reduce the amount of times it needs to access the database.
+          <br><br>
+          Another neat feature when creating this, was that I added in a multi-language system. 
+          I then implemented it into my other plugins, and its something I do as standard now.
+          Using AI I have already pre-translated all the messages/prompts into German, French, Dutch and Spanish. 
+          Although the user can translate and edit any of the messages themselves, so it technically supports any language.
+        </p>
       </section>
       
         <script>
@@ -211,17 +239,23 @@
       <section class="truefalsequiz-plugin">
         <h2>Minecraft Plugin - "A True or False Quiz"</h2>
 
-        <p class="description tfq-content">This is a Minecraft plugin that runs an automated quiz. 
-          It only accepts true or false answers. It comes with pre-set questions but they can be removed, 
-          edited and new ones can be added. If the user wants the players to win rewards from finishing a quiz, 
+        <p class="description tfq-content">
+          This is a Minecraft plugin that runs an automated quiz. 
+          It only accepts "true" or "false" as answers. It comes with pre-set questions but they can be removed, 
+          and edits or new ones can be added. If the user wants players to win rewards from winning a quiz, 
           this can also be setup in the config. It is available for free to the public.
-        <br>
-        This was the first project I worked on, and I created this whilst learning how to code with Spigot API (Minecraft). 
-        Since then, I have refactored the code and a handful of times, to try to improve 
-        readability, performance and to better abide by coding standards.
+          <br><br>
+          This was the first project I worked on, and I created this whilst learning how to code with Spigot API (Minecraft). 
+          Since then, I have refactored the code and a handful of times, to try to improve 
+          readability, performance and to better abide by coding standards.
+          <br><br>
+          It is a multi-modular project, that uses reflection to load the correct module based on the Minecraft version and 
+          the Minecraft server platform the server is running. 
+          Different versions of java are also used depending on which module gets loaded.
+          It is important for me that my plugins are compatible with as many versions of Minecraft as possible.
         </p>
         
-        <table class="table tfq-content">
+        <table class="tfq-content">
           <thead>
             <tr>
               <th scope="col" rowspan="2">Total Downloads</th>
@@ -236,11 +270,11 @@
 
           <tbody>
             <tr>
-              <td><span id="tfq-downloads">0</span></td>
+              <td><span class="table-link" id="tfq-downloads">0</span></td>
               <td>May 16, 2025</td>
-              <td><a href="https://github.com/Soapiee/TFQuiz" target="_blank">GitHub</a></td>
-              <td><a href="https://www.spigotmc.org/resources/truefalsequiz-1-16-26-3.125077/" target="_blank">Plugin Page</a></td>
-              <td><a href="https://github.com/Soapiee/TFQuiz/wiki" target="_blank">GitHub Wiki</a></td>
+              <td><a class="table-link" href="https://github.com/Soapiee/TFQuiz" target="_blank">GitHub</a></td>
+              <td><a class="table-link" href="https://www.spigotmc.org/resources/truefalsequiz-1-16-26-3.125077/" target="_blank">Plugin Page</a></td>
+              <td><a class="table-link" href="https://github.com/Soapiee/TFQuiz/wiki" target="_blank">GitHub Wiki</a></td>
             </tr>
         </table>
     
@@ -297,11 +331,14 @@
       <section class="website">
         <h2>This Website</h2>
 
-        <ul>
-          <li><a href="https://github.com/Soapiee/Portfolio" target="_blank">GitHub</a> </li>
-        </ul>
-        
-        <p class="description website-content">This may be simple, but here is the code behind what you see</p>
+        <div class="box"></div>
+        <p class="box description website-content">
+          This may be simple, but here is the code behind what you see.
+          <br><br>
+          I created this website to showcase my projects, and to give a brief overview of myself.
+          I learnt HTML + CSS specifically for this project.
+        </p>
+        <div class="box"></div>
       </section>
 
     </main>

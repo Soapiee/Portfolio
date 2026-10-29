@@ -169,10 +169,11 @@ td {
 }
 
 .merger-gif {
-    background-image: url("https://preview.redd.it/the-official-minecraft-youtube-banner-full-image-v0-s2c0viilldj41.png?width=1080&crop=smart&auto=webp&s=19fd5b7cb877ef673f5f6d317e2949b4d1d85035");
+    background-image: url("https://i.gyazo.com/69db012c1a85d619db767c6f49e6be81.gif");
     background-position: center;
     max-width: 600px;
     max-height: 600px;
+    background-repeat: no-repeat;
 }
 
 /* .github-logo {

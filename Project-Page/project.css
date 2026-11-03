@@ -56,10 +56,9 @@ h2 {
     font-size: 30px;
     font-weight: bolder;
     padding: 1px;
-    margin: 50px;
+    margin: 30px;
     border: 1px none;
 }
-
 
 footer {
     padding: 20px;
@@ -68,14 +67,15 @@ footer {
 p {
     text-align: center;
     min-width: 300px;
-    max-height: 600px;
+    max-height: 700px;
     overflow: auto;
 }
 
 .description {
     text-align: center;
     padding: 30px 10px;
-    max-width: 600px;
+    /* max-width: 700px; */
+    /* max-height: 500px; */
     background-color: #E6BDA1;
     border-style: dashed;
     border-width: 1px;
@@ -92,21 +92,10 @@ p {
 
 .dh-content, .bm-content, .tfq-content, .merger-content, .website-content {
     display: inline-block;
-    width: 600px;
-    height: 600px;
+    vertical-align: top;
+    max-width: 700px;
+    max-height: 500px;
     z-index: 1;
-}
-
-.bm-table {
-    max-width: 450px;
-    margin-left: 30px;
-    margin-right: 0px;
-}
-
-.dh-table, .tfq-table {
-    max-width: 450px;
-    margin-left: 10px;
-    margin-right: 20px;
 }
 
 .box {
@@ -116,47 +105,29 @@ p {
 }
 
 section {
-    margin: 50px;
-}
-
-.table-caption {
-    color: #594E74;
-    text-align: center;
-    text-shadow: 3px 3px white;
-    font-size: 25px;
-    font-weight: bolder;
-    padding: 1px;
-    margin: 50px 0px;
-    border: 1px none;
+    margin: 100px;
 }
 
 table {
     display: table;
-    /* text-align: left; */
     border-collapse: collapse;
     border-radius: 5px;
+    margin: 30px auto;
 }
 
 th, td {
-    padding: 10px;
-    border: 2px solid #594E74;
+    padding: 2px 70px;;
     text-align: center;
 }
 
 th {
-    color: white;
-    text-shadow: 2px 2px black;
+    color: #79A6A4;
+    text-shadow: 2px 2px white;
     font-size: 20px;
-    background-color: #79A6A4;
 }
 
 td {
     font-size: 15px;
-    background-color: #E6BDA1;
-}
-
-.table-link {
-    background-color: #E6BDA1;
 }
 
 .merger-gif {
@@ -165,6 +136,13 @@ td {
     max-width: 600px;
     max-height: 600px;
     background-repeat: no-repeat;
+}
+
+.merger-gif-cap {
+    text-align: center;
+    margin-top: 10px;
+    height: 25px;
+    font-weight: bold;
 }
 
 .github-logo {

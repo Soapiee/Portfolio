@@ -26,7 +26,7 @@
       <section class="merger-plugin">
         <h2>Minecraft Plugin - "Merger" (WIP)</h2>
 
-        <!-- <table class="merger-table">
+        <table class="merger-table">
           <thead>
             <tr>
               <th scope="col">Total Downloads</th>
@@ -37,9 +37,9 @@
           <tbody>
             <tr>
               <td><span id="merger-downloads">0</span></td>
-              <td>Dec 31, 2027</td>
+              <td>Unreleased</td>
             </tr>
-        </table> -->
+        </table>
 
         <div class="merger-gif merger-content">
           <figcaption class="merger-gif-cap">Merger Game play</figcaption>
@@ -57,7 +57,7 @@
           and there are lots of configuration options to tailor the plugin to their liking. 
           As standard it will come with a set of pre-made config files, so its can be plug-and-play.
           All commands, permissions and features will be fully documented in the GitHub Wiki and on the public plugin page once published.  
-          <br><br>
+          <br>
             <a class="github-logo" href="https://github.com/Soapiee/Merger" target="_blank"><img src="../Media/GithubLogo.png" class="github-logo"></a>
         </p>
 
@@ -85,27 +85,29 @@
             </tr>
         </table>
 
-        <div class="icons-box dh-content">
+        <div class="dh-content">
 
-          <a href="https://github.com/Soapiee/DeathHolograms" target="_blank">
-            <div class="icon github-icon"></div>
-          </a>
+          <div class="dh-icons-box">
 
-          <a href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">
-            <div class="icon spigot-icon"></div>
-          </a>
+            <a href="https://github.com/Soapiee/DeathHolograms" target="_blank">
+              <div class="icon github-icon"></div>
+            </a>
 
-          <a href="https://hangar.papermc.io/Soapiee/DeathHolograms" target="_blank">
-            <div class="icon paper-icon"></div>
-          </a>
+            <a href="https://www.spigotmc.org/resources/death-holograms-1-9-26-3.133766/" target="_blank">
+              <div class="icon spigot-icon"></div>
+            </a>
 
-          <a href="https://modrinth.com/plugin/deathholograms" target="_blank">
-            <div class="icon modrinth-icon"></div>
-          </a>  
+            <a href="https://hangar.papermc.io/Soapiee/DeathHolograms" target="_blank">
+              <div class="icon paper-icon"></div>
+            </a>
 
-        </div>
+            <a href="https://modrinth.com/plugin/deathholograms" target="_blank">
+              <div class="icon modrinth-icon"></div>
+            </a>  
 
-        <p class="description dh-content">
+          </div>
+
+          <p class="dh-description">
           The idea behind this plugin was to find a plugin that was already popular in the Minecraft community,
           but had fallen victim to out-of-date code, and was no longer being maintained.
           I found a highly downloaded plugin, that basically created floating text (holograms) at the location a player dies.
@@ -122,54 +124,68 @@
           Long story short, I added optional dependency support for alternative hologram plugins, 
           that used packets to create holograms, instead of entities in older versions of Minecraft.
           This allowed players to have a choice on how to utilise my plugin.
-        </p>
+          </p>
+
+        <!-- <div class="dh-gif dh-content">
+          <figcaption class="dh-gif-cap">DeathHolograms Game play</figcaption>
+        </div> -->
+
+          <div class="dh-gif">
+            <!-- <figcaption class="dh-gif-cap">DeathHolograms Game play</figcaption> -->
+            <div class="dh-gif1"></div>
+            <div class="dh-gif2"></div>
+            <div class="dh-gif3"></div>
+            <div class="dh-gif4"></div>
+          </div>
       
-        <script>
-            async function loadDownloads() {
-                let spigot = 0;
-                let modrinth = 0;
-                let hangar = 0;
-                const dhTotalElement = document.getElementById("dh-downloads");
+          <script>
+              async function loadDownloads() {
+                  let spigot = 0;
+                  let modrinth = 0;
+                  let hangar = 0;
+                  const dhTotalElement = document.getElementById("dh-downloads");
 
-                try {
-                    const spigotResponse = await fetch("https://api.spiget.org/v2/resources/133766");
+                  try {
+                      const spigotResponse = await fetch("https://api.spiget.org/v2/resources/133766");
 
-                    if (!spigotResponse.ok) return;
-                    
-                    const spigotData = await spigotResponse.json();
-                    spigot = Number(spigotData.downloads);
-                    
-                } catch (error) {
-                }
+                      if (!spigotResponse.ok) return;
+                      
+                      const spigotData = await spigotResponse.json();
+                      spigot = Number(spigotData.downloads);
+                      
+                  } catch (error) {
+                  }
 
-                try {
-                    const modrinthResponse = await fetch("https://api.modrinth.com/v2/project/deathholograms");
+                  try {
+                      const modrinthResponse = await fetch("https://api.modrinth.com/v2/project/deathholograms");
 
-                    if (!modrinthResponse.ok) return;
-                    
-                    const modrinthData = await modrinthResponse.json();
-                    modrinth = Number(modrinthData.downloads);
-                    
-                } catch (error) {
-                }
+                      if (!modrinthResponse.ok) return;
+                      
+                      const modrinthData = await modrinthResponse.json();
+                      modrinth = Number(modrinthData.downloads);
+                      
+                  } catch (error) {
+                  }
 
-                try {
-                    const hangarResponse = await fetch("https://hangar.papermc.io/api/v1/projects/Soapiee/DeathHolograms");
+                  try {
+                      const hangarResponse = await fetch("https://hangar.papermc.io/api/v1/projects/Soapiee/DeathHolograms");
 
-                    if (!hangarResponse.ok) return;
-                    
-                    const hangarData = await hangarResponse.json();
-                    hangar = Number(hangarData.stats.downloads);
-                    
-                } catch (error) {
-                }
+                      if (!hangarResponse.ok) return;
+                      
+                      const hangarData = await hangarResponse.json();
+                      hangar = Number(hangarData.stats.downloads);
+                      
+                  } catch (error) {
+                  }
 
-                const total = spigot + modrinth + hangar;
-                dhTotalElement.textContent = total.toLocaleString("en-GB");
-            }
+                  const total = spigot + modrinth + hangar;
+                  dhTotalElement.textContent = total.toLocaleString("en-GB");
+              }
 
-            loadDownloads();
-        </script>
+              loadDownloads();
+          </script>
+
+        </div>
 
       </section>
       <br>

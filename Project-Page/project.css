@@ -72,41 +72,16 @@ p {
 }
 
 .description {
-    text-align: center;
-    padding: 30px 10px;
-    /* max-width: 700px; */
-    /* max-height: 500px; */
+    padding: 10px 10px;
     background-color: #E6BDA1;
     border-style: dashed;
     border-width: 1px;
     border-radius: 10px;
 }
 
-/* .deathholos-plugin, .truefalsequiz-plugin {
-    text-align: right;
-} */
-
-/* .merger-plugin, .biomemastery-plugin {
-    text-align: left;
-} */
-
-/*.dh-content,*/ .bm-content, .tfq-content, .merger-content, .website-content {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 700px;
-    max-height: 500px;
-    z-index: 1;
-}
-
-.box {
-    display: inline-block;
-    width: 33.33%;
-    max-height: 350px;
-}
-
-section {
+/* section {
     margin: 100px;
-}
+} */
 
 table {
     display: table;
@@ -130,28 +105,46 @@ td {
     font-size: 15px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    height: 500px;
+    width: 100%;
+}
+
+.box {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
 .merger-gif {
+    order: 1;
     background-image: url("https://i.gyazo.com/69db012c1a85d619db767c6f49e6be81.gif");
     background-position: center;
-    width: 500px;
-    height: 500px;
     background-repeat: no-repeat;
 }
 
 .merger-gif-cap {
     text-align: center;
-    /* margin-top: 5px; */
     height: 25px;
     font-weight: bold;
 }
 
-.dh-content {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
-
-.dh-icons-box {
+.icons-container {
     order: 1;
     /* position: relative; */
     /* display: flexbox; */
@@ -164,7 +157,7 @@ td {
     padding-top: 70px;
  }
 
-.dh-description {
+/* .dh-description {
     order: 2;
     text-align: center;
     padding: 30px 10px;
@@ -174,58 +167,46 @@ td {
     border-style: dashed;
     border-width: 1px;
     border-radius: 10px;
+} */
+
+.gif-container {
+    /* order: 3; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: center;
+    /* width: 600px; */
+    gap: 7px;
 }
 
 .dh-gif {
-    order: 3;
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-flow: row wrap; */
-    align-items: space-around;
-    justify-content: center;
-    width: 600px;
-    gap: 7px;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 10%;
 }
 
 .dh-gif1 {
     order: 1;
     background-image: url("https://i.ibb.co/Cp6ZtZ6g/d34d09bed70ff7f936a3d5b636629abf-1.gif");
-    background-position: center;
-    width: 250px;
-    height: 250px;
-    background-repeat: no-repeat;
-    border-radius: 10%;
 }
 
 .dh-gif2 {
     order: 2;
     background-image: url("https://i.ibb.co/bMMzRh8d/6efa831a03478ef7b79169766fdfa879-1.gif");
-    background-position: center;
     background-size: 200% 170%;
-    width: 250px;
-    height: 250px;
-    background-repeat: no-repeat;
-    border-radius: 10%;
 }
 
 .dh-gif3 {
     order: 3;
     background-image: url("https://i.ibb.co/XxwnBXK8/8f37b4fae2819511e479da75bffe15f2-1.gif");
-    background-position: center;
-    width: 250px;
-    height: 250px;
-    background-repeat: no-repeat;
-    border-radius: 10%;
 }
 
 .dh-gif4 {
     order: 4;
     background-image: url("https://i.ibb.co/F4h5T2ZK/920fb3e2c1eef0ef10bf83fb7616d5d5-1.gif");
-    background-position: center;
-    width: 250px;
-    height: 250px;
-    background-repeat: no-repeat;
-    border-radius: 10%;
 }
 
 .dh-gif-cap {
@@ -241,19 +222,17 @@ td {
     background-color: #E6BDA1;
  }
 
-.icons-box {
+/* .icons-box {
     position: relative;
     display: flexbox;
-    /* border: 2px solid black; */
-    /* background-color: red; */
     max-height: 600px;
     max-width: 100px;
     margin-right: 20px;
     margin-left: 20px;
     padding-top: 70px;
- }
+ } */
 
-.icon {
+/* .icon {
     width: 95px;
     height: 100px;
     text-align: center;
@@ -261,37 +240,37 @@ td {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
- }
+ } */
 
-.github-icon {
+/* .github-icon {
     background-image: url("../Media/GitHubLogo2.png");
     background-color: #FAE0CF;
     margin-left: 20px;
     width: 60px;
     height: 60px;
-}
+} */
 
-.paper-icon {
+/* .paper-icon {
     background-image: url("https://assets.papermc.io/brand/papermc_logo.256.png");
     background-color: #FAE0CF;
     margin-left: 15px;
     width: 70px;
     height: 70px;
-}
+} */
 
-.spigot-icon {
+/* .spigot-icon {
     background-image: url("../Media/SpigotLogo.png");
     background-color: #FAE0CF;
     margin-left: 15px;
     width: 70px;
     height: 70px;
-}
+} */
 
-.modrinth-icon {
+/* .modrinth-icon {
     background-image: url("../Media/ModrinthLogo.png");
     background-color: #FAE0CF;
     margin-left: 20px;
     width: 60px;
     height: 60px;
-}
+} */
 

@@ -22,11 +22,12 @@
     </header>
 
     <main>
-       <br>
-      <section class="merger-plugin">
+      <br>
+
+      <section>
         <h2>Minecraft Plugin - "Merger" (WIP)</h2>
 
-        <table class="merger-table">
+        <table>
           <thead>
             <tr>
               <th scope="col">Total Downloads</th>
@@ -41,11 +42,13 @@
             </tr>
         </table>
 
-        <div class="merger-gif merger-content">
-          <figcaption class="merger-gif-cap">Merger Game play</figcaption>
-        </div>
+        <div class="container">
+
+          <div class="box order-1 merger-gif">
+            <figcaption class="merger-gif-cap">Merger Game play</figcaption>
+          </div>
         
-        <p class="description merger-content">
+          <p class="box order-2 description">
           If you've ever played a mobile game where you merge objects, 
           well this is that, but in Minecraft. It is currently still in development and 
           isnt yet available to download.
@@ -59,18 +62,17 @@
           All commands, permissions and features will be fully documented in the GitHub Wiki and on the public plugin page once published.  
           <br>
             <a class="github-logo" href="https://github.com/Soapiee/Merger" target="_blank"><img src="../Media/GithubLogo.png" class="github-logo"></a>
-        </p>
+          </p>
 
         </div>
 
       </section>
       <br>
 
-      <section class="deathholos-plugin">
+      <section>
         <h2>Minecraft Plugin - "Death Holograms"</h2>
 
-        <table class="dh-table">
-          <!-- <caption class="table-caption">Plugin Stats</caption> -->
+        <table>
           <thead>
             <tr>
               <th scope="col">Total Downloads</th>
@@ -85,9 +87,9 @@
             </tr>
         </table>
 
-        <div class="dh-content">
+        <div class="container">
 
-          <div class="dh-icons-box">
+          <!-- <div class="dh-icons-box">
 
             <a href="https://github.com/Soapiee/DeathHolograms" target="_blank">
               <div class="icon github-icon"></div>
@@ -105,37 +107,33 @@
               <div class="icon modrinth-icon"></div>
             </a>  
 
-          </div>
+          </div> -->
 
-          <p class="dh-description">
+          <p class="box order-1 description">
           The idea behind this plugin was to find a plugin that was already popular in the Minecraft community,
           but had fallen victim to out-of-date code, and was no longer being maintained.
           I found a highly downloaded plugin, that basically created floating text (holograms) at the location a player dies.
           I didnt look at their code, Im not even sure if it was available to the public, but I decided I wanted to see
           if I could code it from scratch using my own knowledge. Within a few days the plugin was born. 
-          <br><br>
+            <br><br>
           The most difficult part of this project was the impact on server performance. 
           When it comes to Minecraft holograms, they are usually classed as an entities (like animals). 
           Lots of entities, means potential performance issues.
           I researched alot and found a more modern way to create holograms. This new API didnt use entities, 
           but it was only available in newer versions of Minecraft.
           This left me with a problem, as I wanted the plugin to be compatible with as many versions of Minecraft as possible.
-          <br><br>
+            <br><br>
           Long story short, I added optional dependency support for alternative hologram plugins, 
           that used packets to create holograms, instead of entities in older versions of Minecraft.
           This allowed players to have a choice on how to utilise my plugin.
           </p>
 
-        <!-- <div class="dh-gif dh-content">
-          <figcaption class="dh-gif-cap">DeathHolograms Game play</figcaption>
-        </div> -->
-
-          <div class="dh-gif">
-            <!-- <figcaption class="dh-gif-cap">DeathHolograms Game play</figcaption> -->
-            <div class="dh-gif1"></div>
-            <div class="dh-gif2"></div>
-            <div class="dh-gif3"></div>
-            <div class="dh-gif4"></div>
+          <div class="box order-2 gif-container">
+            <figcaption class="dh-gif dh-gif-cap">DeathHolograms Game play</figcaption> 
+            <div class="dh-gif dh-gif1"></div>
+            <div class="dh-gif dh-gif2"></div>
+            <div class="dh-gif dh-gif3"></div>
+            <div class="dh-gif dh-gif4"></div>
           </div>
       
           <script>
@@ -190,11 +188,10 @@
       </section>
       <br>
 
-      <section class="biomemastery-plugin">
+      <!-- <section class="biomemastery-plugin">
         <h2>Minecraft Plugin - "BiomeMastery"</h2>
 
         <table class="bm-table">
-          <!-- <caption class="table-caption">Plugin Stats</caption> -->
           <thead>
             <tr>
               <th scope="col">Total Downloads</th>
@@ -245,8 +242,6 @@
 
         </div>
 
-      </section>
-      
         <script>
             async function loadDownloads() {
                 let spigot = 0;
@@ -293,15 +288,14 @@
 
             loadDownloads();
         </script>
-      
-      </section>
+
+      </section> -->
       <br>
 
-      <section class="truefalsequiz-plugin">
+      <!-- <section class="truefalsequiz-plugin">
         <h2>Minecraft Plugin - "A True or False Quiz"</h2>
 
         <table class="tfq-table">
-          <!-- <caption class="table-caption">Plugin Stats</caption> -->
           <thead>
             <tr>
               <th scope="col" rowspan="2">Total Downloads</th>
@@ -399,10 +393,10 @@
             loadDownloads();
         </script>
       
-      </section>
+      </section> -->
       <br>
 
-      <section class="website">
+      <!-- <section class="website">
         <h2>This Website</h2>
 
         <div class="box"></div>
@@ -418,7 +412,7 @@
 
         <div class="box"></div>
 
-      </section>
+      </section> -->
 
     </main>
 

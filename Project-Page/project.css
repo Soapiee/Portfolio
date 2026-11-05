@@ -79,9 +79,9 @@ p {
     border-radius: 10px;
 }
 
-/* section {
+section {
     margin: 100px;
-} */
+}
 
 table {
     display: table;
@@ -108,15 +108,63 @@ td {
 .container {
     display: flex;
     justify-content: center;
-    /* background-color: red; */
     height: 500px;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.web-container {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .box {
     display: inline-block;
     width: 30%;
     height: 100%;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    justify-content: center;
+}
+
+.icon-box {
+    height: 20%;
+    gap: 0px;
+    width: 100%;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: center;
+    gap: 7px;
+}
+
+.gif-box {
+    background-position: center;
+    width: 45%;
+    height: 45%;
+    background-repeat: no-repeat;
+    border-radius: 10%;
 }
 
 .order-1 {
@@ -131,88 +179,44 @@ td {
     order: 3;
 }
 
+.order-4 {
+    order: 4;
+}
+
+.caption {
+    text-align: center;
+    height: 25px;
+    font-weight: bold;
+    width: 100%;
+}
+
 .merger-gif {
-    order: 1;
     background-image: url("https://i.gyazo.com/69db012c1a85d619db767c6f49e6be81.gif");
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.merger-gif-cap {
-    text-align: center;
-    height: 25px;
-    font-weight: bold;
-}
-
-.icons-container {
-    order: 1;
-    /* position: relative; */
-    /* display: flexbox; */
-    /* border: 2px solid black; */
-    /* background-color: red; */
-    max-height: 600px;
-    max-width: 100px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: 70px;
- }
-
-/* .dh-description {
-    order: 2;
-    text-align: center;
-    padding: 30px 10px;
-    max-width: 700px;
-    max-height: 500px;
-    background-color: #E6BDA1;
-    border-style: dashed;
-    border-width: 1px;
-    border-radius: 10px;
-} */
-
-.gif-container {
-    /* order: 3; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-items: space-around;
-    justify-content: center;
-    /* width: 600px; */
-    gap: 7px;
-}
-
-.dh-gif {
-    background-position: center;
-    width: 200px;
-    height: 200px;
-    background-repeat: no-repeat;
-    border-radius: 10%;
-}
-
 .dh-gif1 {
-    order: 1;
     background-image: url("https://i.ibb.co/Cp6ZtZ6g/d34d09bed70ff7f936a3d5b636629abf-1.gif");
 }
 
 .dh-gif2 {
-    order: 2;
     background-image: url("https://i.ibb.co/bMMzRh8d/6efa831a03478ef7b79169766fdfa879-1.gif");
     background-size: 200% 170%;
 }
 
 .dh-gif3 {
-    order: 3;
     background-image: url("https://i.ibb.co/XxwnBXK8/8f37b4fae2819511e479da75bffe15f2-1.gif");
 }
 
 .dh-gif4 {
-    order: 4;
     background-image: url("https://i.ibb.co/F4h5T2ZK/920fb3e2c1eef0ef10bf83fb7616d5d5-1.gif");
 }
 
-.dh-gif-cap {
-    text-align: center;
-    height: 25px;
-    font-weight: bold;
+.tfq-video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 90px;
 }
 
 .github-logo {
@@ -222,55 +226,19 @@ td {
     background-color: #E6BDA1;
  }
 
-/* .icons-box {
-    position: relative;
-    display: flexbox;
-    max-height: 600px;
-    max-width: 100px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: 70px;
- } */
-
-/* .icon {
-    width: 95px;
-    height: 100px;
-    text-align: center;
-    margin: 30px 0;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
- } */
-
-/* .github-icon {
+.github-icon {
     background-image: url("../Media/GitHubLogo2.png");
-    background-color: #FAE0CF;
-    margin-left: 20px;
-    width: 60px;
-    height: 60px;
-} */
+}
 
-/* .paper-icon {
-    background-image: url("https://assets.papermc.io/brand/papermc_logo.256.png");
-    background-color: #FAE0CF;
-    margin-left: 15px;
-    width: 70px;
-    height: 70px;
-} */
-
-/* .spigot-icon {
+.spigot-icon {
     background-image: url("../Media/SpigotLogo.png");
-    background-color: #FAE0CF;
-    margin-left: 15px;
-    width: 70px;
-    height: 70px;
-} */
+}
 
-/* .modrinth-icon {
+.paper-icon {
+    background-image: url("https://assets.papermc.io/brand/papermc_logo.256.png");
+}
+
+.modrinth-icon {
     background-image: url("../Media/ModrinthLogo.png");
-    background-color: #FAE0CF;
-    margin-left: 20px;
-    width: 60px;
-    height: 60px;
-} */
+}
 

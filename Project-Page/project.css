@@ -10,6 +10,8 @@
     background-color: #FAE0CF;
 }
 
+ /* Navigation  */
+
 .navbar {
     text-align: center;
     position: fixed;
@@ -39,6 +41,9 @@
 #nav-current {
     font-size: 50px;
 }
+
+
+  /* General Styling */
 
 main {
     position: relative;
@@ -77,11 +82,15 @@ p {
     border-style: dashed;
     border-width: 1px;
     border-radius: 10px;
+    max-width: 50%;
 }
 
 section {
     margin: 100px;
 }
+
+
+  /* Table */
 
 table {
     display: table;
@@ -105,6 +114,8 @@ td {
     font-size: 15px;
 }
 
+ /* Layout */
+
 .container {
     display: flex;
     justify-content: center;
@@ -127,12 +138,13 @@ td {
     display: inline-block;
     width: 30%;
     height: 100%;
+    flex-grow: 0.5;
 }
 
 .icon-container {
     display: flex;
     flex-direction: column;
-    width: 50px;
+    max-width: 50px;
     justify-content: center;
 }
 
@@ -190,6 +202,9 @@ td {
     width: 100%;
 }
 
+
+ /* Media */
+
 .merger-gif {
     background-image: url("https://i.gyazo.com/69db012c1a85d619db767c6f49e6be81.gif");
     background-position: center;
@@ -202,7 +217,7 @@ td {
 
 .dh-gif2 {
     background-image: url("https://i.ibb.co/bMMzRh8d/6efa831a03478ef7b79169766fdfa879-1.gif");
-    background-size: 200% 170%;
+    /* background-size: 200% 170%; */
 }
 
 .dh-gif3 {
@@ -216,7 +231,7 @@ td {
 .tfq-video {
     width: 100%;
     border-radius: 10px;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .github-logo {

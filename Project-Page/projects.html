@@ -1,4 +1,4 @@
-<!DOCTYPR html>
+<!DOCTYPE html>
 <html>
 
   <head>
@@ -358,9 +358,9 @@
           It is important for me that my plugins are compatible with as many versions of Minecraft as possible.
           </p>
 
-          <div class="box order-3">
-            <figcaption class="caption">Quiz Game play</figcaption>
-            <video class="tfq-video" controls loop
+          <div class="box media-container order-3">
+            <figcaption class="media-box caption">Quiz Game play</figcaption>
+            <video class="media-box tfq-video" controls loop
             src="../Media/TFQGameplay.mp4" type="video/mp4">Cannot play video</video>
           </div>
 
@@ -382,16 +382,16 @@
                 } catch (error) {
                 }
 
-                // try {
-                //     const modrinthResponse = await fetch("https://api.modrinth.com/v2/project/truefalsequiz");
+                try {
+                     const modrinthResponse = await fetch("https://api.modrinth.com/v2/project/truefalsequiz");
 
-                //     if (!modrinthResponse.ok) return;
+                     if (!modrinthResponse.ok) return;
                     
-                //     const modrinthData = await modrinthResponse.json();
-                //     modrinth = Number(modrinthData.downloads);
+                     const modrinthData = await modrinthResponse.json();
+                    modrinth = Number(modrinthData.downloads);
                     
-                // } catch (error) {
-                // }
+                } catch (error) {
+                }
 
                 try {
                     const hangarResponse = await fetch("https://hangar.papermc.io/api/v1/projects/Soapiee/TrueFalseQuiz");
@@ -404,7 +404,7 @@
                 } catch (error) {
                 }
 
-                const total = spigot + hangar;
+                const total = spigot + hangar + modrinth;
                 tfqTotalElement.textContent = total.toLocaleString("en-GB");
             }
 

@@ -45,19 +45,32 @@ a, a:visited {
 
 main {
     position: relative;
-    top: 50px;
+    top: 150px;
+}
+
+p {
+    overflow: auto;
+    background-color: transparent;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    width: 100%;
+    height: 700px;
+    grid-template-areas: ". about ."
+                        ". . .";
+    justify-items: center;
+    align-items: center;
 }
 
 .about {
-    margin-top: 100px;
-    margin-left: 50px;
-    position: relative;
+    grid-area: about;
     text-align: center;
     font-size: 20px;
-    padding: 50px;
+    padding: 10px;
     background-color: #E6BDA1;
     border: 1px dashed black;
     border-radius: 10px;
-    float: left;
-    max-width: 800px;
 }

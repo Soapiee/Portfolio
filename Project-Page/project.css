@@ -10,40 +10,106 @@
     background-color: #FAE0CF;
 }
 
-.navbar {
-    text-align: center;
-    position: fixed;
-    z-index: 10;
+ /* Navigation  */
+
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    grid-template-areas: ". . nav-about nav-home nav-project . .";
     width: 100%;
+    height: 80px;
+
+    justify-items: center;
+    align-items: end;
+
+    position: fixed;
+    z-index: 5;
+    gap: 20px;
     border-bottom: 10px double rgba(230, 189, 161, 0.5);
-}
+    /* border: 5px solid red; */
+    /* background-color: black; */
 
-.navbar a {
-    color: white;
-    text-decoration-line: none;
-    font-weight: 900;
-    text-shadow: 5px 5px #594E74;
-    font-size: 32px;
-    margin: 30px;
-}
-
-.navbar a:visited {
-    color: white;
-    text-decoration-line: none;
-    text-shadow: 5px 5px #594E74;
-    font-weight: 900;
-    font-size: 327px;
-    margin: 10px;
+    font-size: 40px;
 }
 
 #nav-current {
-    font-size: 50px;
+    color: #594E74;
+    text-shadow: 5px 5px white;
 }
 
-main {
-    position: relative;
-    top: 50px;
+.nav-about, .nav-home, .nav-project {
+    max-width: 100%;
+    min-width: 0;
+    text-align: center;
+    overflow: visible;
+    justify-content: center;
+    /* font-size: 5vw; */
 }
+
+.nav-about {
+    grid-area: nav-about;
+}
+
+.nav-home {
+    grid-area: nav-home;
+}
+
+.nav-project {
+    grid-area: nav-project;
+}
+
+nav a {
+    color: white;
+    text-decoration-line: none;
+    font-weight: 900;
+    text-shadow: 5px 5px #594E74;
+
+}
+
+nav a:visited {
+    color: white; 
+    text-decoration-line: none;
+    text-shadow: 5px 5px #594E74;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "nav-about"
+                            "nav-home"
+                            "nav-project";
+        width: 100%;
+        height: auto;
+        gap: 2px;
+
+        font-size: 20px;
+    }
+
+    #nav-current {
+        color: #594E74;
+        text-shadow: 4px 4px white;
+    }
+
+    nav a {
+        color: white;
+        text-decoration-line: none;
+        font-weight: 900;
+        text-shadow: 4px 4px #594E74;
+    }
+
+    nav a:visited {
+        color: white; 
+        text-decoration-line: none;
+        text-shadow: 4px 4px #594E74;
+        font-weight: 900;
+    }
+}
+
+
+  /* General Styling */
 
 a, a:visited {
     color: black;
@@ -56,42 +122,40 @@ h2 {
     font-size: 30px;
     font-weight: bolder;
     padding: 1px;
-    margin: 30px;
     border: 1px none;
+    width: 100%;
+}
+
+p {
+    background-color: transparent;
+}
+
+main {
+    position: relative;
+    top: 120px;
+}
+
+section {
+    padding-bottom: 200px;
 }
 
 footer {
     padding: 20px;
 }
 
-p {
-    text-align: center;
-    min-width: 300px;
-    max-height: 700px;
-    overflow: auto;
-}
 
-.description {
-    padding: 10px 10px;
-    background-color: #E6BDA1;
-    border-style: dashed;
-    border-width: 1px;
-    border-radius: 10px;
-}
-
-section {
-    margin: 100px;
-}
+  /* Table */
 
 table {
     display: table;
     border-collapse: collapse;
     border-radius: 5px;
     margin: 30px auto;
+    max-width: 90%;
 }
 
 th, td {
-    padding: 2px 70px;;
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -105,66 +169,113 @@ td {
     font-size: 15px;
 }
 
+ /* Layout */
+
 .container {
     display: flex;
     justify-content: center;
-    height: 500px;
+    height: auto;
     width: 100%;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.web-container {
+/* .web-container {
     display: flex;
     justify-content: center;
     height: 250px;
     width: 100%;
     flex-wrap: wrap;
     gap: 20px;
+} */
+
+.text-container {
+    height: 100%;
+    align-self: center;
+}
+
+.description {
+    padding: 10px 10px;
+    background-color: #E6BDA1;
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 10px;
+
+    text-align: center;
+    min-width: 200px;
+    max-height: 700px;
+    overflow: auto;
 }
 
 .box {
     display: inline-block;
-    width: 30%;
     height: 100%;
+    width: 90%;
+
+}
+
+@media only screen and (min-width: 480px) {
+    .box {
+        width: 30%;
+        flex-grow: 0.25;
+    }
 }
 
 .icon-container {
     display: flex;
     flex-direction: column;
-    width: 50px;
     justify-content: center;
+
+    max-width: 50px;
+    height: auto;
 }
 
 .icon-box {
-    height: 20%;
-    gap: 0px;
+    height: 100%;
     width: 100%;
+    gap: 0px;
 }
 
 .icon {
-    height: 100%;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    height: 100%;
+    width: 100%;
 }
 
-.gif-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-items: space-around;
-    justify-content: center;
-    gap: 7px;
+@media only screen and (max-width: 480px) {
+    .icon-container {
+        flex-direction: row;
+        max-width: 90%;
+        height: 40px;
+    }
+
+    .icon-box {
+        height: 80%;
+    }
+}
+
+.media-container {
+    max-width: 100%;
+    height: auto;
+    align-content: center;
 }
 
 .gif-box {
-    background-position: center;
-    width: 45%;
-    height: 45%;
-    background-repeat: no-repeat;
-    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: center space-around;
+    justify-content: center;
+    gap: 7px;
+
+    min-height: 400px;
+    max-width: 600px;
+
+    height: 90%;
+    width: 100%;
 }
 
 .order-1 {
@@ -190,10 +301,23 @@ td {
     width: 100%;
 }
 
+
+ /* Media */
+
 .merger-gif {
     background-image: url("https://i.gyazo.com/69db012c1a85d619db767c6f49e6be81.gif");
     background-position: center;
     background-repeat: no-repeat;
+    height: 400px;
+}
+
+.dh-gif1, .dh-gif2, .dh-gif3, .dh-gif4 {
+    background-position: center;
+    width: 45%;
+    height: 45%;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    background-size: cover;
 }
 
 .dh-gif1 {
@@ -202,7 +326,6 @@ td {
 
 .dh-gif2 {
     background-image: url("https://i.ibb.co/bMMzRh8d/6efa831a03478ef7b79169766fdfa879-1.gif");
-    background-size: 200% 170%;
 }
 
 .dh-gif3 {
@@ -216,7 +339,6 @@ td {
 .tfq-video {
     width: 100%;
     border-radius: 10px;
-    margin-top: 90px;
 }
 
 .github-logo {

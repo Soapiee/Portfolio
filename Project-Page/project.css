@@ -155,8 +155,7 @@ table {
 }
 
 th, td {
-    padding: 2px;
-    gap: 70px;
+    padding: 0 20px;
     text-align: center;
 }
 

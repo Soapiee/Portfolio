@@ -203,6 +203,7 @@ td {
     display: inline-block;
     height: 100%;
     width: 90%;
+
 }
 
 @media only screen and (min-width: 480px) {
@@ -248,23 +249,31 @@ td {
     }
 }
 
-.gif-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-items: space-around;
-    justify-content: center;
-    gap: 7px;
+.video-container {
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+}
 
-    height: 400px;
+.gif-container {
+    max-width: 100%;
+    height: auto;
+    align-content: center;
 }
 
 .gif-box {
-    background-position: center;
-    width: 45%;
-    height: 45%;
-    background-repeat: no-repeat;
-    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: center space-around;
+    justify-content: center;
+    gap: 7px;
+
+    min-height: 400px;
+    max-width: 600px;
+
+    height: 90%;
+    width: 100%;
 }
 
 .order-1 {
@@ -300,6 +309,15 @@ td {
     height: 400px;
 }
 
+.dh-gif1, .dh-gif2, .dh-gif3, .dh-gif4 {
+    background-position: center;
+    width: 45%;
+    height: 45%;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    background-size: cover;
+}
+
 .dh-gif1 {
     background-image: url("https://i.ibb.co/Cp6ZtZ6g/d34d09bed70ff7f936a3d5b636629abf-1.gif");
 }
@@ -314,12 +332,6 @@ td {
 
 .dh-gif4 {
     background-image: url("https://i.ibb.co/F4h5T2ZK/920fb3e2c1eef0ef10bf83fb7616d5d5-1.gif");
-}
-
-.video-container {
-    max-width: 100%;
-    height: auto;
-    align-content: center;
 }
 
 .tfq-video {

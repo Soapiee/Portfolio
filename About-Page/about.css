@@ -9,6 +9,8 @@
     background-color: #FAE0CF;
 }
 
+ /* Navigation  */
+
 .nav-container {
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -22,20 +24,19 @@
 
     position: fixed;
     z-index: 5;
-    font-size: 40px;
     gap: 20px;
     border-bottom: 10px double rgba(230, 189, 161, 0.5);
-    /* border: 5px solid red; */
+
+    font-size: 40px;
 }
 
 #nav-current {
-    /* font-size: 60px; */
     color: #594E74;
     text-shadow: 5px 5px white;
 }
 
 .nav-about, .nav-home, .nav-project {
-    max-width: 100;
+    max-width: 100%;
     min-width: 0;
     text-align: center;
     overflow: visible;
@@ -43,20 +44,14 @@
 
 .nav-about {
     grid-area: nav-about;
-    /* background-color: blue; */
-    /* border: 5px solid purple; */
 }
 
 .nav-home {
     grid-area: nav-home;
-    /* background-color: green; */
-    /* border: 5px solid purple; */
 }
 
 .nav-project {
     grid-area: nav-project;
-    /* background-color: pink; */
-    /* border: 5px solid purple; */
 }
 
 nav a {
@@ -71,6 +66,40 @@ nav a:visited {
     text-decoration-line: none;
     text-shadow: 5px 5px #594E74;
     font-weight: 900;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "nav-about"
+                            "nav-home"
+                            "nav-project";
+        width: 100%;
+        height: auto;
+        gap: 2px;
+
+        font-size: 20px;
+    }
+
+    #nav-current {
+        color: #594E74;
+        text-shadow: 4px 4px white;
+    }
+
+    nav a {
+        color: white;
+        text-decoration-line: none;
+        font-weight: 900;
+        text-shadow: 4px 4px #594E74;
+    }
+
+    nav a:visited {
+        color: white; 
+        text-decoration-line: none;
+        text-shadow: 4px 4px #594E74;
+        font-weight: 900;
+    }
 }
 
 a, a:visited {
@@ -92,7 +121,7 @@ p {
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 3fr 1fr;
     width: 100%;
-    height: 700px;
+    height: auto;
     grid-template-areas: ". about ."
                         ". . .";
     justify-items: center;
@@ -101,10 +130,18 @@ p {
 
 .about {
     grid-area: about;
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
+    padding: 10px 10px;
     background-color: #E6BDA1;
-    border: 1px dashed black;
+    border-style: dashed;
+    border-width: 1px;
     border-radius: 10px;
+
+    text-align: center;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .about {
+        width: 140%;
+    }
 }

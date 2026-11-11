@@ -9,6 +9,8 @@
     background-color: #FAE0CF;
 }
 
+/* Navigation  */
+
 .nav-container {
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -22,20 +24,19 @@
 
     position: fixed;
     z-index: 5;
-    font-size: 40px;
     gap: 20px;
     border-bottom: 10px double rgba(230, 189, 161, 0.5);
-    /* border: 5px solid red; */
+
+    font-size: 40px;
 }
 
 #nav-current {
-    /* font-size: 60px; */
     color: #594E74;
     text-shadow: 5px 5px white;
 }
 
 .nav-about, .nav-home, .nav-project {
-    max-width: 100;
+    max-width: 100%;
     min-width: 0;
     text-align: center;
     overflow: visible;
@@ -43,20 +44,14 @@
 
 .nav-about {
     grid-area: nav-about;
-    /* background-color: blue; */
-    /* border: 5px solid purple; */
 }
 
 .nav-home {
     grid-area: nav-home;
-    /* background-color: green; */
-    /* border: 5px solid purple; */
 }
 
 .nav-project {
     grid-area: nav-project;
-    /* background-color: pink; */
-    /* border: 5px solid purple; */
 }
 
 nav a {
@@ -73,29 +68,80 @@ nav a:visited {
     font-weight: 900;
 }
 
+@media only screen and (max-width: 480px) {
+    .nav-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "nav-about"
+                            "nav-home"
+                            "nav-project";
+        width: 100%;
+        height: auto;
+        gap: 2px;
+
+        font-size: 20px;
+    }
+
+    #nav-current {
+        color: #594E74;
+        text-shadow: 4px 4px white;
+    }
+
+    nav a {
+        color: white;
+        text-decoration-line: none;
+        font-weight: 900;
+        text-shadow: 4px 4px #594E74;
+    }
+
+    nav a:visited {
+        color: white; 
+        text-decoration-line: none;
+        text-shadow: 4px 4px #594E74;
+        font-weight: 900;
+    }
+}
+
 a, a:visited {
     color: black;
 }
 
-.title {
-    margin-top: 200px;
+main {
     position: relative;
+    top: 150px;
+}
+
+/* p {
+    overflow: auto;
+    background-color: transparent;
+}  */
+
+.title {
+    /* margin-top: 200px; */
+    /* position: relative; */
     text-align: center;
     color: #594E74;
     /* background-color: red; */
-    font-size: 50px;
+    font-size: 30px;
     text-shadow: 3px 3px white;
     font-weight: bolder;
-    border: 1px none;
 }
 
 .intro {
-    margin: 30px;
+    padding-top: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    overflow: auto;
 }
 
 .box {
     display: inline-block;
     width: 33.33%;
+}
+
+@media only screen and (max-width: 480px){
+    .box {
+        padding: 10px;
+        width: 100%;
+    }
 }

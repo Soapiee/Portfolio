@@ -54,23 +54,28 @@
 
         <div class="container">
 
-          <div class="box order-1 merger-gif">
+          <div class="box order-1 media-container">
             <figcaption class="caption">Merger Game play</figcaption>
+            <div class="merger-gif"></div>
+          </div>
+
+          <div class="box order-2 text-container">
+            <p class="description">
+              If you've ever played a mobile game where you merge objects, 
+              well this is that, but in Minecraft. It is currently still in development and 
+              isnt yet available to download.
+              <br><br>
+              This is the first project I've done using Gradle, and it turns out its alot easier than I expected. 
+              Its builds alot faster than Maven too.
+              <br><br>
+              It utilises a choice of SQL database storage or file storage (YAML). As always, users can fully customise the language file, 
+              and there are lots of configuration options to tailor the plugin to their liking. 
+              As standard it will come with a set of pre-made config files, so its can be plug-and-play.
+              All commands, permissions and features will be fully documented in the GitHub Wiki and on the public plugin page once published.  
+            </p>
           </div>
         
-          <p class="box order-2 description">
-          If you've ever played a mobile game where you merge objects, 
-          well this is that, but in Minecraft. It is currently still in development and 
-          isnt yet available to download.
-          <br><br>
-          This is the first project I've done using Gradle, and it turns out its alot easier than I expected. 
-          Its builds alot faster than Maven too.
-          <br><br>
-          It utilises a choice of SQL database storage or file storage (YAML). As always, users can fully customise the language file, 
-          and there are lots of configuration options to tailor the plugin to their liking. 
-          As standard it will come with a set of pre-made config files, so its can be plug-and-play.
-          All commands, permissions and features will be fully documented in the GitHub Wiki and on the public plugin page once published.  
-          </p>
+          
 
           <div class="box order-3 icon-container">
 
@@ -124,26 +129,28 @@
 
           </div>
 
-          <p class="box order-2 description">
-          The idea behind this plugin was to find a plugin that was already popular in the Minecraft community,
-          but had fallen victim to out-of-date code, and was no longer being maintained.
-          I found a highly downloaded plugin, that basically created floating text (holograms) at the location a player dies.
-          I didnt look at their code, Im not even sure if it was available to the public, but I decided I wanted to see
-          if I could code it from scratch using my own knowledge. Within a few days the plugin was born. 
-            <br><br>
-          The most difficult part of this project was the impact on server performance. 
-          When it comes to Minecraft holograms, they are usually classed as an entities (like animals). 
-          Lots of entities, means potential performance issues.
-          I researched alot and found a more modern way to create holograms. This new API didnt use entities, 
-          but it was only available in newer versions of Minecraft.
-          This left me with a problem, as I wanted the plugin to be compatible with as many versions of Minecraft as possible.
-            <br><br>
-          Long story short, I added optional dependency support for alternative hologram plugins, 
-          that used packets to create holograms, instead of entities in older versions of Minecraft.
-          This allowed players to have a choice on how to utilise my plugin.
-          </p>
+          <div class="box order-2 text-container">
+            <p class="description">
+              The idea behind this plugin was to find a plugin that was already popular in the Minecraft community,
+              but had fallen victim to out-of-date code, and was no longer being maintained.
+              I found a highly downloaded plugin, that basically created floating text (holograms) at the location a player dies.
+              I didnt look at their code, Im not even sure if it was available to the public, but I decided I wanted to see
+              if I could code it from scratch using my own knowledge. Within a few days the plugin was born. 
+                <br><br>
+              The most difficult part of this project was the impact on server performance. 
+              When it comes to Minecraft holograms, they are usually classed as an entities (like animals). 
+              Lots of entities, means potential performance issues.
+              I researched alot and found a more modern way to create holograms. This new API didnt use entities, 
+              but it was only available in newer versions of Minecraft.
+              This left me with a problem, as I wanted the plugin to be compatible with as many versions of Minecraft as possible.
+                <br><br>
+              Long story short, I added optional dependency support for alternative hologram plugins, 
+              that used packets to create holograms, instead of entities in older versions of Minecraft.
+              This allowed players to have a choice on how to utilise my plugin.
+           </p>
+          </div>
 
-          <div class="box order-3 gif-container">
+          <div class="box order-3 media-container">
             <figcaption class="caption">DeathHolograms Game play</figcaption> 
             <div class="gif-box">
               <div class="order-1 dh-gif1"></div>
@@ -352,23 +359,26 @@
 
           </div>
 
-          <p class="box order-2 description">
-          This is a Minecraft plugin that runs an automated quiz. 
-          It only accepts "true" or "false" as answers. It comes with pre-set questions but they can be removed, 
-          and edits or new ones can be added. If the user wants players to win rewards from winning a quiz, 
-          this can also be setup in the config. It is available for free to the public.
-            <br><br>
-          This was the first project I worked on, and I created this whilst learning how to code with Spigot API (Minecraft). 
-          Since then, I have refactored the code and a handful of times, to try to improve 
-          readability, performance and to better abide by coding standards.
-            <br><br>
-          It is a multi-modular project, that uses reflection to load the correct module based on the Minecraft version and 
-          the Minecraft server platform the server is running. 
-          Different versions of java are also used depending on which module gets loaded.
-          It is important for me that my plugins are compatible with as many versions of Minecraft as possible.
-          </p>
+          <div class="box order-2 text-container">
+            <p class="description">
+              This is a Minecraft plugin that runs an automated quiz. 
+              It only accepts "true" or "false" as answers. It comes with pre-set questions but they can be removed, 
+              and edits or new ones can be added. If the user wants players to win rewards from winning a quiz, 
+              this can also be setup in the config. It is available for free to the public.
+                <br><br>
+              This was the first project I worked on, and I created this whilst learning how to code with Spigot API (Minecraft). 
+              Since then, I have refactored the code and a handful of times, to try to improve 
+              readability, performance and to better abide by coding standards.
+                <br><br>
+              It is a multi-modular project, that uses reflection to load the correct module based on the Minecraft version and 
+              the Minecraft server platform the server is running. 
+              Different versions of java are also used depending on which module gets loaded.
+              It is important for me that my plugins are compatible with as many versions of Minecraft as possible.
+            </p>
 
-          <div class="box order-3 video-container">
+          </div>
+
+          <div class="box order-3 media-container">
             <figcaption class="caption">Quiz Game play</figcaption>
             <video class="tfq-video" controls loop
             src="../Media/TFQGameplay.mp4" type="video/mp4">Cannot play video</video>
@@ -426,25 +436,25 @@
       <section>
         <h2>This Website</h2>
 
-        <div class="web-container">
+        <div class="container">
 
-          <p class="box order-1 description">
-            This may be simple, but here is the code behind what you see.
-            <br><br>
-            I created this website to showcase my projects, and to give a brief overview of myself.
-            I learnt HTML + CSS specifically for this project.
-            <br><br>
-            Concious of browser and device compatibility. Using fallback fonts, css feature queries.
-            Used different display options: flex, grid
-            Use different media types: Gifs, videos and images.
-        </p>
+          <div class="box order-1 text-container">
+            <p class="description">
+              This may be simple, but here is the code behind what you see.
+              <br><br>
+              I created this website to showcase my projects, and to give a brief overview of myself.
+              I learnt HTML + CSS specifically for this project.
+              <br><br>
+              Concious of browser and device compatibility. Using fallback fonts, css feature queries.
+              Used different display options: flex, grid
+              Use different media types: Gifs, videos and images.
+            </p>
+          </div>
 
-        <div class="box order-2 icon-container">
-
+          <div class="box order-2 icon-container">
             <a class="icon-box" href="https://github.com/Soapiee/Portfolio" target="_blank">
               <div class="icon order-1 github-icon"></div>
             </a> 
-
           </div>
 
         </div>

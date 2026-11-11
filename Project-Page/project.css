@@ -126,6 +126,10 @@ h2 {
     width: 100%;
 }
 
+p {
+    background-color: transparent;
+}
+
 main {
     position: relative;
     top: 120px;
@@ -168,6 +172,29 @@ td {
 
  /* Layout */
 
+.container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* .web-container {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
+.text-container {
+    height: 100%;
+    align-self: center;
+}
+
 .description {
     padding: 10px 10px;
     background-color: #E6BDA1;
@@ -179,24 +206,6 @@ td {
     min-width: 200px;
     max-height: 700px;
     overflow: auto;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.web-container {
-    display: flex;
-    justify-content: center;
-    height: 250px;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .box {
@@ -249,13 +258,7 @@ td {
     }
 }
 
-.video-container {
-    max-width: 100%;
-    height: auto;
-    align-content: center;
-}
-
-.gif-container {
+.media-container {
     max-width: 100%;
     height: auto;
     align-content: center;
